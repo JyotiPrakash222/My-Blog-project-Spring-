@@ -1,11 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
+  <head data-th-replace="~{fragment :: head-section}"></head>
+
   <body>
-    add-blog works
+    <link rel="stylesheet" href="/css/form.css" />
+
+    <!-- ============================================================================================ HEADER -->
+
+    <div
+      class="waveWrapper waveAnimation"
+      style="height: 60vh; position: relative"
+    >
+      <div class="waveWrapperInner bgTop">
+        <div
+          class="wave waveTop"
+          style="
+            background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png');
+          "
+        >
+          <div class="carousel-caption" style="margin-left: -49%">
+            <div
+              class="container carousel-content"
+              data-aos="fade-up"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+              style="margin-bottom: 2.5%"
+            >
+              <h1
+                class="text-white display-1 mb-4 animated fadeInRight"
+                style="font-weight: 350"
+              >
+                <span style="color: #0000009c">Exploring the Unseen</span
+                ><span style="color: #0000009c">Travel Chronicles</span>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="waveWrapperInner bgMiddle">
+        <div
+          class="wave waveMiddle"
+          style="
+            background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png');
+          "
+        ></div>
+      </div>
+      <div class="waveWrapperInner bgBottom">
+        <div
+          class="wave waveBottom"
+          style="
+            background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png');
+          "
+        ></div>
+      </div>
+    </div>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- 
+
+    header end
+
+   -->
+    <!-- <header data-th-replace="~{fragment :: header-section}"></header> -->
+
+    <main>
+      <section>
+        <div
+          data-th-replace="~{fragment :: link-section(url='/blogs',name='Back to home')}"
+        ></div>
+
+        <div class="form-container">
+          <h2 id="hd1">Create blog</h2>
+          <hr />
+          <form action="/add-blog" method="post">
+            <div class="form-group">
+              <label
+                for="input-1"
+                style="color: rgba(0, 0, 0, 0.568); font-weight: 600"
+                >Enter heading</label
+              >
+              <input
+                type="text"
+                id="input-1"
+                class="form-control"
+                name="heading"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label
+                for="input-2"
+                style="color: rgba(0, 0, 0, 0.568); font-weight: 600"
+                >Enter description</label
+              >
+              <textarea
+                id="input-2"
+                rows="5"
+                class="form-control"
+                name="description"
+                required
+              >
+              </textarea>
+            </div>
+
+            <input type="submit" />
+          </form>
+        </div>
+      </section>
+    </main>
+    <!--  CSS -->
+    <style>
+      @keyframes move_wave {
+        0% {
+          transform: translateX(0) translateZ(0) scaleY(1);
+        }
+        50% {
+          transform: translateX(-25%) translateZ(0) scaleY(0.55);
+        }
+        100% {
+          transform: translateX(-50%) translateZ(0) scaleY(1);
+        }
+      }
+      .waveWrapper {
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        margin: auto;
+      }
+      .waveWrapperInner {
+        position: absolute;
+        width: 100%;
+        overflow: hidden;
+        height: 100%;
+        bottom: -1px;
+        background-image: linear-gradient(to top, #feac5e 7%, #bf5dca 93%);
+      }
+      .bgTop {
+        z-index: 15;
+        opacity: 0.5;
+      }
+      .bgMiddle {
+        z-index: 10;
+        opacity: 0.75;
+      }
+      .bgBottom {
+        z-index: 5;
+      }
+      .wave {
+        position: absolute;
+        left: 0;
+        width: 200%;
+        height: 100%;
+        background-repeat: repeat no-repeat;
+        background-position: 0 bottom;
+        transform-origin: center bottom;
+      }
+      .waveTop {
+        background-size: 50% 100px;
+      }
+      .waveAnimation .waveTop {
+        animation: move-wave 3s;
+        -webkit-animation: move-wave 3s;
+        -webkit-animation-delay: 1s;
+        animation-delay: 1s;
+      }
+      .waveMiddle {
+        background-size: 50% 120px;
+      }
+      .waveAnimation .waveMiddle {
+        animation: move_wave 10s linear infinite;
+      }
+      .waveBottom {
+        background-size: 50% 100px;
+      }
+      .waveAnimation .waveBottom {
+        animation: move_wave 15s linear infinite;
+      }
+    </style>
   </body>
 </html>

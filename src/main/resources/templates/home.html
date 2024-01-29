@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>⚡JP-Blogs</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+
+    <link rel="stylesheet" href="css/aos.css" />
+
+    <link rel="stylesheet" href="css/ionicons.min.css" />
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
+    <link rel="stylesheet" href="css/jquery.timepicker.css" />
+
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/css/blog.css" />
+  </head>
+  <body>
+    <div id="colorlib-page">
+      <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+      <aside
+        id="colorlib-aside"
+        role="complementary"
+        class="js-fullheight text-center"
+      >
+        <h1 id="colorlib-logo">
+          <a
+            href="#"
+            style="color: rgba(0, 0, 0, 0.749)"
+            data-aos="fade-right"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="3000"
+            >JP<span>.</span></a
+          >
+        </h1>
+        <nav id="colorlib-main-menu" role="navigation">
+          <ul>
+            <li
+              class="colorlib-active"
+              data-aos="fade-right"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+            >
+              <a href="index.html">Home</a>
+            </li>
+            <li
+              data-aos="fade-right"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1400"
+            >
+              <a th:href="@{/blogs}">Explore Blogs</a>
+            </li>
+            <li
+              data-aos="fade-right"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1900"
+            >
+              <a href="travel.html">Travel</a>
+            </li>
+            <li
+              data-aos="fade-right"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2400"
+            >
+              <a href="fashion.html">Fashion</a>
+            </li>
+            <li
+              data-aos="fade-right"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2700"
+            >
+              <a th:href="@{/add-blog}">About</a>
+            </li>
+            <li
+              data-aos="fade-right"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="3000"
+            >
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="colorlib-footer">
+          <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            All rights reserved | Crafted
+            <i class="icon-heart" aria-hidden="true"></i> by
+            <a href="#" target="_blank">JP</a>
+          </p>
+
+          <ul>
+            <li>
+              <a href="#"><i class="icon-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="icon-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="icon-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="icon-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <!-- END COLORLIB-ASIDE -->
+      <div id="colorlib-main">
+        <div
+          class="hero-wrap js-fullheight"
+          style="position: relative"
+          data-stellar-background-ratio="0.5"
+        >
+          <div
+            class="background-image"
+            style="
+              background-image: url(https://images.unsplash.com/photo-1664262283608-05edf08055be?q=80&w=1984&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            "
+          ></div>
+          <div class="overlay"></div>
+          <div
+            class="js-fullheight d-flex justify-content-center align-items-center"
+          >
+            <div class="col-md-8 text text-center">
+              <div
+                class="img mb-4"
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+                style="
+                  background-image: url('https://ipadizate.com/hero/2021/03/fondo-personalizado-wwdc-21.jpg?width=1200&aspect_ratio=16:9');
+                  margin-top: 10%;
+                "
+              ></div>
+              <div
+                class="desc"
+                data-aos="fade-up"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+              >
+                <h2
+                  class="subheading"
+                  style="
+                    color: rgba(0, 0, 0, 0.548);
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                  "
+                >
+                  Hello I'm
+                </h2>
+                <h1 class="mm-4">Jyoti Prakash Mallik</h1>
+                <p class="mb-4" style="color: rgba(0, 0, 0, 0.541)">
+                  "I am a blogger, residing in a distant land, far beyond the
+                  reaches of the written word. Nestled away from the countries
+                  of Vokalia and Consonantia, there dwell the unseen texts.
+                  Isolated, they inhabit Bookmarksgrove, situated along the
+                  shores of the Semantics—a vast ocean of language."
+                </p>
+                <p>
+                  <a
+                    style="color: rgb(83, 5, 125); margin-top: -3%"
+                    href="https://thorenjp.netlify.app/"
+                    class="btn-custom"
+                    ><strong>Click here to Visit my Website</strong
+                    ><span class="ion-ios-arrow-forward">.</span></a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Content section =============================================================================================================================================-->
+        <div class="container" style="margin-left: 1%">
+          <section class="info">
+            <img
+              class="d-none d-sm-block"
+              style="height: 100px"
+              src="https://codetheweb.blog/assets/img/icon2.png"
+            />
+            <h2
+              style="
+                text-align: center;
+                margin-top: 20px;
+                color: rgba(0, 0, 0, 0.773);
+                font-family: tahoma;
+              "
+            >
+              Lets's Explore
+            </h2>
+          </section>
+          <section class="cards-wrapper">
+            <div class="card-grid-space">
+              <div class="num">01</div>
+              <a
+                class="card"
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1000"
+                style="
+                  --bg-img: url(https://images.unsplash.com/photo-1605466802051-6c4e2d0ae06d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+                "
+              >
+                <div>
+                  <h1 th:text="${blog.blogname}"></h1>
+                  <p>
+                    If you are the sort of person who just can not keep yourself
+                    alive, travel.…
+                  </p>
+                  <div class="date">6 Oct 2019</div>
+                  <div class="tags">
+                    <button class="tag">Explore</button>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="card-grid-space">
+              <div class="num">02</div>
+              <a
+                class="card"
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000"
+                style="
+                  --bg-img: url(https://images.unsplash.com/photo-1614450770370-f09fb63defc4?q=80&w=1897&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+                "
+              >
+                <div>
+                  <h1 th:text="${blog2.blogname}"></h1>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Necessitatibus non rerum fuga voluptas magnam iste maxime
+                    i!…
+                  </p>
+                  <div class="date mb-5">9 Oct 2022</div>
+                  <div class="tags">
+                    <button class="tag">Explore</button>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="card-grid-space">
+              <div class="num">03</div>
+              <a
+                class="card"
+                data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="3000"
+                style="
+                  --bg-img: url(https://images.unsplash.com/photo-1605466052249-8987c8b7d91d?q=80&w=1910&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+                "
+              >
+                <div>
+                  <h1 th:text="${blog3.blogname}"></h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aliqus…
+                  </p>
+                  <div class="date">14 Oct 20</div>
+                  <div class="tags">
+                    <button class="tag">Explore</button>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- https://images.unsplash.com/photo-1520839090488-4a6c211e2f94?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=38951b8650067840307cba514b554ba5&auto=format&fit=crop&w=1350&q=80 -->
+          </section>
+        </div>
+        <!-- Content section end -->
+        <footer
+          class="ftco-footer ftco-bg-dark ftco-section"
+          style="background-color: rgb(6, 21, 41)"
+        >
+          <div class="container px-md-5">
+            <div class="row mb-5">
+              <div class="col-md">
+                <div class="ftco-footer-widget mb-4 ml-md-4">
+                  <h2
+                    class="ftco-heading-2"
+                    data-aos="fade-up"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000"
+                  >
+                    Category
+                  </h2>
+                  <ul
+                    class="list-unstyled categories"
+                    data-aos="fade-right"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000"
+                  >
+                    <li>
+                      <a href="#">Photography <span>(6)</span></a>
+                    </li>
+                    <li>
+                      <a href="#">Fashion <span>(8)</span></a>
+                    </li>
+                    <li>
+                      <a href="#">Technology <span>(2)</span></a>
+                    </li>
+                    <li>
+                      <a href="#">Travel <span>(2)</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="ftco-footer-widget mb-4">
+                  <h2
+                    class="ftco-heading-2"
+                    data-aos="fade-up"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000"
+                  >
+                    Archives
+                  </h2>
+                  <ul
+                    class="list-unstyled categories"
+                    data-aos="fade-right"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="3000"
+                  >
+                    <li>
+                      <a href="#">October 2018 <span>(6)</span></a>
+                    </li>
+                    <li>
+                      <a href="#">September 2018 <span>(6)</span></a>
+                    </li>
+                    <li>
+                      <a href="#">August 2018 <span>(8)</span></a>
+                    </li>
+                    <li>
+                      <a href="#">July 2018 <span>(2)</span></a>
+                    </li>
+                    <li>
+                      <a href="#">June 2018 <span>(7)</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="ftco-footer-widget mb-4">
+                  <h2
+                    class="ftco-heading-2"
+                    data-aos="fade-up"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="3000"
+                  >
+                    Have a Questions?
+                  </h2>
+                  <div class="block-23 mb-3">
+                    <ul
+                      data-aos="zoom-in"
+                      data-aos-easing="ease-out-cubic"
+                      data-aos-duration="3000"
+                    >
+                      <li>
+                        <span class="icon icon-map-marker"></span
+                        ><span class="text">BHUBANESWAR</span>
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><span class="icon icon-phone"></span
+                          ><span class="text">965025020</span></a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://thorenjp.netlify.app/"
+                          ><span class="icon icon-envelope"></span
+                          ><span class="text"
+                            >https://thorenjp.netlify.app/</span
+                          ></a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <p>
+                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                  Copyright &copy;
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  All rights reserved | Crafted by JP
+                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <!-- END COLORLIB-MAIN -->
+    </div>
+    <!-- END COLORLIB-PAGE -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    <!-- <script src="js/scrollax.min.js"></script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="js/google-map.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+.form-container {
+  border: 1px solid #ffffff;
+  padding: 1rem;
+}
+
+.form-container h2 {
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+
+.form-group {
+  margin-block: 1rem;
+}
+
+label {
+  display: block;
+  margin-block: 0.5rem;
+}
+#hd1 {
+  color: #fff;
+  font-size: 3em;
+  font-weight: bold;
+  font-family: Helvetica;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+}
+.form-control {
+  width: 100%;
+  font-size: 1.02rem;
+  border: solid 2px rgba(0, 0, 0, 0.141);
+  padding-inline: 5px;
+  background-color: rgba(112, 112, 112, 0.031);
+}
+
+input[type="submit"] {
+  outline: none;
+  border: none;
+  background: linear-gradient(60deg, #feac5e, #e06aed);
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.439);
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 1.03rem;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.383);
+  transition: 0.4s;
+}
+input[type="submit"]:hover {
+  scale: 1.04;
+}
